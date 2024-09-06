@@ -22,13 +22,10 @@ export default function Header() {
   const Token = localStorage.getItem("access");  
 
   return (  
-    <AppBar position="static" className="bg-indigo-600 shadow-xl">  
+    <AppBar position="fixed" className="bg-red-600 shadow-xl">  
       <Container>  
         <Toolbar>  
-          <Stack direction={"row"} alignItems={"center"} flexGrow={1}>  
-            <IconButton color="inherit" onClick={() => navigate(ADDRoutes.Home)}>  
-              <DiamondIcon />  
-            </IconButton>  
+          <Stack direction={"row"} alignItems={"center"} flexGrow={1}>   
             <Typography variant="h6" className="ml-2 text-white font-semibold">  
               Courses  
             </Typography>  
@@ -63,7 +60,6 @@ export default function Header() {
               variant="outlined"  
               className="ml-3 text-white border-white hover:bg-white hover:text-indigo-600 transition duration-200"  
               onClick={() => navigate(ADDRoutes.Login)}  
-              startIcon={<LoginIcon />}  
             >  
               Login  
             </Button>  

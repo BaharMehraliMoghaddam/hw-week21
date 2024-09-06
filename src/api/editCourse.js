@@ -1,4 +1,4 @@
-import { httpService } from "../Serviecs/InstanceAxios";
+import { httpService } from "../serviecs/InstanceAxios";
 
 
 export default async function editCourse({id,editedCourse}) {

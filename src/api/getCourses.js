@@ -1,4 +1,4 @@
-import { httpService } from "../Serviecs/InstanceAxios";
+import { httpService } from "../serviecs/InstanceAxios";
 
 
 export default async function getCourses({page=1,checked="",search=""}){

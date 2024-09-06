@@ -9,7 +9,7 @@ import {
   Typography,
 } from "@mui/material";
 import { useForm } from "react-hook-form";
-import { addCourseValidation } from "../Schema/ValidationForm";
+import { addCourseValidation } from "../schema/ValidationForm";
 import useAddCourse from "../Hooks/useAddCourse";
 import { useNavigate } from "react-router-dom";
 import * as React from 'react';

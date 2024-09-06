@@ -76,7 +76,7 @@ export default function ShowCourse() {
     >
       <Helmet>
                 <meta charSet="utf-8" />
-                <title>نمایش دوره {data.title ? data?.title : ""}</title>
+                <title> show course {data.title ? data?.title : ""}</title>
                 <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
       <Toolbar />

@@ -37,7 +37,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import {
   addCourseValidation,
   editCourseValidation,
-} from "../Schema/ValidationForm";
+} from "../schema/ValidationForm";
 import EditNoteIcon from "@mui/icons-material/EditNote";
 import useGetOneCourse from "../Hooks/getOneCourse";
 import useEditCourse from "../Hooks/useEditCourse";
@@ -305,7 +305,7 @@ export default function CoursesPage() {
               sx={{ width: "100%" }}
             >
               {!editVal
-                ? `دوره ${deleteVal?.teacher} deleted succesfully `
+                ? `course ${deleteVal?.teacher} deleted succesfully `
                 : " sedited succesfully"}
             </Alert>
           </Snackbar>
@@ -605,7 +605,7 @@ export default function CoursesPage() {
             >
               <Button
                 variant="contained"
-                color="secondary"
+                color="inherit"
                 //startIcon={<NoteAddIcon />}
                 sx={{ mb: 2 , ml:6 }}
                 onClick={() => navigate(ADDRoutes.AddCourse)}
@@ -763,7 +763,7 @@ export default function CoursesPage() {
                   style={{ fontSize: 17, fontWeight: "bold", color: "blue" }}
                   onClick={() => navigate(ADDRoutes.Login)}
                 >
-                  ورود
+                  login
                 </Button>
               </Paper>
             </Grid>

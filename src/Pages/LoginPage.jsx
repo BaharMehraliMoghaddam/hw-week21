@@ -8,7 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import { useForm } from "react-hook-form";
-import { validationSchema } from "../Schema/ValidationForm";
+import { validationSchema } from "../schema/ValidationForm";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { boolean } from "zod";
 import { useNavigate } from "react-router-dom";

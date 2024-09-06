@@ -1,5 +1,5 @@
 import { loginURL } from "../Constants/ValuesConstant";
-import { httpService } from "../Serviecs/InstanceAxios";
+import { httpService } from "../serviecs/InstanceAxios";
 
 export default async function postLogin(user) {
   try {
